@@ -60,7 +60,7 @@ export default {
             itemView.push(el)
         }
 
-        axios.get(`${process.env.VUE_APP_SERVER_URL}/json/cart.json`)
+        axios.get(`${process.env.VUE_APP_SERVER_URL}/main/json/cart.json`)
         .then(response => {
             carts.value = response.data
             // console.log(carts.value)
@@ -74,7 +74,7 @@ export default {
             console.log(err)
         })
 
-        axios.get(`${process.env.VUE_APP_SERVER_URL}/json/user-addr.json`)
+        axios.get(`${process.env.VUE_APP_SERVER_URL}/main/json/user-addr.json`)
         .then(response => {
             addList.value = response.data
             // console.log(addList.value)

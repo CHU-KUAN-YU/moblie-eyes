@@ -40,7 +40,7 @@ import { Button } from 'vant'
         },
         created(){
             var vm = this;
-            this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/json/commend-list.json`)
+            this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/main/json/commend-list.json`)
                 .then(function(res){                    
                     vm.commendList = res.data
                     // console.log(vm.commendList)

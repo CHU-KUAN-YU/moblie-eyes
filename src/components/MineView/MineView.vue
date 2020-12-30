@@ -4,7 +4,7 @@
         <div class="user-view">
             <div class="content-wrapper">
                 <div class="user-msg">
-                    <img src="http://www.api.qsyj.com/img/atom.png" alt="">
+                    <img src="https://github.com/CHU-KUAN-YU/moblie-eyes/blob/main/img/atom.png" alt="">
                     <p>請叫我阿若妹</p>
                 </div>
                 <van-row>

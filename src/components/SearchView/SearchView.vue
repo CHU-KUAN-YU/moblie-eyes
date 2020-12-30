@@ -103,7 +103,7 @@ export default {
 
             // 獲取數據
             // console.log('搜索關鍵字' + searchKey.value)
-            axios.get(`${process.env.VUE_APP_SERVER_URL}/json/search-detail.json`)
+            axios.get(`${process.env.VUE_APP_SERVER_URL}/main/json/search-detail.json`)
             .then(response => {
                 searchDataList.value = response.data.list
 

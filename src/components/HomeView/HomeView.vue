@@ -78,7 +78,7 @@ export default {
         const vm = this;
 
         //獲取輪播圖
-        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/json/banner.json`)
+        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/main/json/banner.json`)
             .then(function(response){
                 // console.log(response.data)
                 vm.banner = response.data
@@ -88,7 +88,7 @@ export default {
             })
 
         // 獲取精品活動資料
-        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/json/winnow.json`)        
+        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/main/json/winnow.json`)        
             .then(function(response){                
                 vm.winnowBig1 = response.data.bigImg1
                 vm.winnowContents1 = response.data.winnowItems1

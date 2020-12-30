@@ -48,7 +48,7 @@ export default {
         
         //資料
         const fetchAllCharacters = () =>{
-            axios.get(`${process.env.VUE_APP_SERVER_URL}/json/assort.json`)
+            axios.get(`${process.env.VUE_APP_SERVER_URL}/main/json/assort.json`)
             .then(response => {
                 assortList.value = response.data
                 // console.log('載入資料');

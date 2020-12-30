@@ -18,7 +18,7 @@ export default {
     },
     created(){
         let vm = this
-        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/json/selling-list.json`)
+        this.$ajax.get(`${process.env.VUE_APP_SERVER_URL}/main/json/selling-list.json`)
             .then(function(res){
                 // console.log(res.data)
                 vm.sellings = res.data

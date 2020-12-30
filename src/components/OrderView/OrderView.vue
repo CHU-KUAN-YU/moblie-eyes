@@ -55,7 +55,7 @@ export default {
         
 
         /* 獲取數據 */
-        Axios.get(`${process.env.VUE_APP_SERVER_URL}/json/order.json`)
+        Axios.get(`${process.env.VUE_APP_SERVER_URL}/main/json/order.json`)
         .then(function(response){
             orderList.value = response.data
             // console.log(orderList.value[1])
